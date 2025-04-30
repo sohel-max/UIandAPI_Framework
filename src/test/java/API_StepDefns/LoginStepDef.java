@@ -19,8 +19,8 @@ public class LoginStepDef {
 
     @When("Create a new user")
     public void login_with_valid_credentials() {
-        String payload = "{ \"name\": \"John Doe\", \"job\": \"Software Engineer\" }";
-        response = APIUtils.get(baseURI, "/api/users", payload);
+
+        response = APIUtils.get(baseURI, "/api/users");
     }
 
     @Then("Verify Status code")
