@@ -38,7 +38,7 @@ public class multiBrowserTabTest {
 
     public void verifyTitle()  {
         //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-        tabSwitch();
+       // tabSwitch();
         String actualTitle = driver.getTitle();
         String expectedTitle="New Window";
         Assert.assertEquals(actualTitle, expectedTitle, "Page title does not match!");

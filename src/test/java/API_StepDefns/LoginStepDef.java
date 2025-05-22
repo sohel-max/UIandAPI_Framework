@@ -17,14 +17,14 @@ public class LoginStepDef {
         baseURI = ConfigReader.get("baseURI");
     }
 
-    @When("Create a new user")
-    public void login_with_valid_credentials() {
+    @When("List of existing user")
+    public void listExistingUser() {
 
         response = APIUtils.get(baseURI, "/api/users");
     }
 
     @Then("Verify Status code")
-    public void validate_token_response() {
+    public void validate_response_Code() {
         response.then().statusCode(200);
 
     }
